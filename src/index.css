@@ -1,13 +1,63 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+  --BLACK: #080B11;
+  --YELLOW: #FFC107;
+  --WHITE: #FFFFFF;
+  --GRAY: #d7d7d7;
+  --DARK-GRAY: #656565;
+  --xs: 0.5rem;
+  --sm: 1rem;
+  --md: 1.5rem;
+  --lg: 2rem;
+  --xl: 2.5rem;
+  --xxl: 5rem;
+}
+
+.gray{
+  color: var(--DARK-GRAY);
+}
+
+.flex-row{
+  display: flex;
+}
+
+.center{
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-start{
+  justify-content: flex-start;
+}
+
+.gap-md{
+  gap: var(--md);
+}
+
+.gap-sm{
+  gap: var(--sm);
+}
+
+.gap-xs{
+  gap: var(--xs);
+}
+
+
+
+.pad-xl{
+  padding: 4rem;
 }

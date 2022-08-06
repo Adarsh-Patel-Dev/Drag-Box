@@ -1,0 +1,24 @@
+.floating-box {
+    display: flex;
+    padding: var(--sm);
+    background-color: var(--DARK-GRAY);
+    color: var(--WHITE);
+    height: 18rem;
+    width: 35rem;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 2px solid var(--BLACK);
+}
+
+.floating-box-pos{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.floating-box-msg{
+    font-size: var(--md);
+    color: var(--WHITE);
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,14 @@
+.footer {
+    position: fixed;
+    background-color: var(--BLACK);
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+    bottom: 0px;
+}
+
+.footer-msg{
+    color: var(--WHITE);
+    cursor: pointer;
+    font-size: var(--md);
+}

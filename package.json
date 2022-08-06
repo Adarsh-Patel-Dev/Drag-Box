@@ -1,5 +1,5 @@
 {
-  "name": "floating-box",
+  "name": "dragbox",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
