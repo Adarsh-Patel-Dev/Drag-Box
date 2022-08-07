@@ -8,8 +8,7 @@ function DraggableBox() {
   const [coordinate, setCoordinate] = useState({ x: 0, y: 0 });
   const { state, positionDispatch, border, setBorder } = usePositionContext();
   const divPosition = capitalize(state.position);
-  console.log("this is div pos", divPosition);
-
+  
   function findCoordinate(value) {
     positionDispatch({
       type: "MOVE",
@@ -20,6 +19,9 @@ function DraggableBox() {
 
   return (
     <>
+    <div className="display-container">
+
+    </div>
       <div
         className={`floating ${
           state.position === "center" ? "center" : "bottom-right"
@@ -27,7 +29,8 @@ function DraggableBox() {
       >
         <Draggable
           handle=".handle"
-          bounds={{ left: -282, top: -161, right: 282, bottom: 161 }}
+          bounds={{left: -500, top: -150, right: 500, bottom: 150}}
+          //bounds={{ left: -282, top: -161, right: 282, bottom: 161 }}
           defaultPosition={coordinate}
           position={state.cordinates}
           onDrag={(e, data) => {

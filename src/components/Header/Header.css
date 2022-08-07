@@ -1,25 +1,25 @@
-.header-container{
-    z-index: 1;
-      justify-content: space-between;
-    padding: 2rem 1rem;
-    background-color: var(--BLACK);
-    color: var(--WHITE);
-    height: 8rem;
-    font-size: 1.5rem;
+.header-container {
+  z-index: 1;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  background-color: var(--BLACK);
+  color: var(--WHITE);
+  height: 8rem;
+  font-size: 1.5rem;
 }
 
-.header-msg{
-    color: var(--YELLOW);
-    cursor: pointer;
-    font-size: var(--md);
+.header-msg {
+  color: var(--YELLOW);
+  cursor: pointer;
+  font-size: var(--md);
 }
 
-.input-container{
-    display: flex;
-   gap: 5px;
+.input-container {
+  display: flex;
+  gap: 5px;
 }
 
-.clock{
-    font-size: var(--md);
-    color: var(--WHITE);
+.clock {
+  font-size: var(--md);
+  color: var(--WHITE);
 }

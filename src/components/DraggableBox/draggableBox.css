@@ -3,8 +3,8 @@
     padding: var(--sm);
     background-color: var(--DARK-GRAY);
     color: var(--WHITE);
-    height: 19rem;
-    width: 35rem;
+    height: 15rem;
+    width: 25rem;
     justify-content: space-between;
     flex-direction: column;
 }

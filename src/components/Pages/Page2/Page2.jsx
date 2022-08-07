@@ -16,9 +16,9 @@ function Page2() {
     </header>
 
     <main className='main'>
-      <article>
+      <div className=''>
         <p>I am Adarsh</p>
-      </article>
+      </div>
     </main>
     
     <footer className='footer'>
