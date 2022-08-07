@@ -8,7 +8,7 @@ function Display() {
   return (
    
       <div className="display-container">
-       {displayFloatingBox && <DraggableBox />}
+     
       </div>
    
   );

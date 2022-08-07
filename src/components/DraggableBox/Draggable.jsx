@@ -29,7 +29,7 @@ function DraggableBox() {
       >
         <Draggable
           handle=".handle"
-          bounds={{left: -500, top: -150, right: 500, bottom: 150}}
+          bounds={{left: -960, top: -315, right: 0, bottom: -73}}
           //bounds={{ left: -282, top: -161, right: 282, bottom: 161 }}
           defaultPosition={coordinate}
           position={state.cordinates}
@@ -44,7 +44,7 @@ function DraggableBox() {
               border ? "blue-border" : "black-border"
             } `}
           >
-            <div className="floating-box-pos handle">
+            <div className="floating-box-pos ">
               <p>{divPosition}</p>
             </div>
             <div className="floating-box-msg">

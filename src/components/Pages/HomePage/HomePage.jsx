@@ -4,6 +4,7 @@ import { Display } from "../../Display/Display";
 import { DraggableBox } from "../../DraggableBox/Draggable";
 import { Footer } from "../../Footer/Footer";
 import Header from "../../Header/Header";
+import "../page.css"
 
 function HomePage() {
   const { displayFloatingBox, setdisplayFloatingBox } = usePositionContext();
@@ -19,7 +20,7 @@ function HomePage() {
         console.log("esc", displayFloatingBox);
       }
     },
-    [displayFloatingBox]
+    []
   );
 
   useEffect(() => {
@@ -37,6 +38,7 @@ function HomePage() {
       </nav>
       <main className="main">
         <Display />
+        {displayFloatingBox && <DraggableBox />}
       </main>
       <footer className="footer">
         <Footer />

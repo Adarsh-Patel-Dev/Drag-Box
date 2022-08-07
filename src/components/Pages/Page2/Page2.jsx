@@ -10,13 +10,13 @@ function Page2() {
   const { setBorder, positionDispatch } = usePositionContext();
   
   return (
-    <div>
-    <header className='nav header-container'>
-      <p>Page2</p>
+    <div className='page'>
+    <header className='nav'>
+      <p className='page2-header'>Page2</p>
     </header>
 
     <main className='main'>
-      <div className=''>
+      <div className='main-container'>
         <p>I am Adarsh</p>
       </div>
     </main>
