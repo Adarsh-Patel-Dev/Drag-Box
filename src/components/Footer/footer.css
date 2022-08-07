@@ -1,14 +1,23 @@
 .footer {
+    z-index: 1;
     position: fixed;
     background-color: var(--BLACK);
     padding: 20px;
     text-align: center;
     width: 100vw;
     bottom: 0px;
+    height: 8rem;
 }
 
-.footer-msg{
+.footer-btn {
+    gap: 1rem;
+    background: transparent;
+    border: transparent;
     color: var(--WHITE);
     cursor: pointer;
     font-size: var(--md);
+    display: flex;
+    font-size: var(--lg);
+    align-items: flex-start;
+    margin: auto;
 }

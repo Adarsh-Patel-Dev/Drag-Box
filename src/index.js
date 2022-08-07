@@ -4,13 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { PositionProvider } from "./components/Context/PositionContext";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <PositionProvider>
-      <App />
-    </PositionProvider>
+    <BrowserRouter>
+      <PositionProvider>
+        <App />
+      </PositionProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

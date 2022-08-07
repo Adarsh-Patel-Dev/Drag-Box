@@ -3,16 +3,25 @@
     padding: var(--sm);
     background-color: var(--DARK-GRAY);
     color: var(--WHITE);
-    height: 18rem;
+    height: 19rem;
     width: 35rem;
     justify-content: space-between;
     flex-direction: column;
-    border: 2px solid var(--BLACK);
+}
+
+.floating{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 .floating-box-pos{
     display: flex;
     justify-content: flex-start;
+    font-size: var(--md);
+    color: var(--BLACK);
+    font-weight: 600;
     
 }
 
@@ -21,4 +30,16 @@
     color: var(--WHITE);
     display: flex;
     justify-content: flex-end;
+}
+
+.bottom-right {
+   
+}
+
+.blue-border{
+    border: 2px solid var(--BLUE);
+}
+
+.black-border{
+    border: 2px solid var(--BLACK);
 }

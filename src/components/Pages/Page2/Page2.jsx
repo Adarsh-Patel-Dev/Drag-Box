@@ -1,9 +1,38 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { usePositionContext } from '../../Context/PositionContext';
+import { FaAngleLeft } from "react-icons/fa";
+
+
 
 function Page2() {
+  const navigate = useNavigate()
+  const { setBorder, positionDispatch } = usePositionContext();
+  
   return (
-    <div>Page2</div>
+    <div>
+    <header className='nav header-container'>
+      <p>Page2</p>
+    </header>
+
+    <main className='main'>
+      <article>
+        <p>I am Adarsh</p>
+      </article>
+    </main>
+    
+    <footer className='footer'>
+     <button className='footer-btn'
+      onClick={()=>{
+        navigate("/",{replace: true})
+        positionDispatch({type: "CENTER", payload: 'center'})
+        setBorder(true)
+
+      }}> <FaAngleLeft/>Back
+     </button>
+    </footer>
+    </div>
   )
 }
 
-export default Page2
+export  {Page2}
