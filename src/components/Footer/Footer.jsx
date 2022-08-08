@@ -2,23 +2,24 @@ import React from "react";
 import "./footer.css";
 import { FaChevronRight, FaAngleLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import { usePositionContext } from "../Context/PositionContext";
+import { usePositionContext } from "../Context";
 
-function Footer() {
+function Footer({ url, btnText, icon }) {
   const navigate = useNavigate();
-  const { border, setBorder, positionDispatch } = usePositionContext();
+  const { setBorder, positionDispatch } = usePositionContext();
   return (
     <footer className="footer">
       <button
         onClick={() => {
-          navigate("/page2", { replace: true });
+          navigate(url, { replace: true });
+          positionDispatch({ type: "CENTER", payload: "center" });
+          setBorder(true);
         }}
         className="footer-btn"
       >
-        <span>Goto Page2</span>
-        <span>
-          <FaChevronRight />
-        </span>
+        {icon === "left" ? <FaAngleLeft /> : ""}
+        <span>{btnText}</span>
+        {icon === "right" ? <FaChevronRight /> : ""}
       </button>
     </footer>
   );

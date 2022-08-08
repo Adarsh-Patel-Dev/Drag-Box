@@ -41,7 +41,7 @@ function HomePage() {
         {displayFloatingBox && <DraggableBox />}
       </main>
       <footer className="footer">
-        <Footer />
+      <Footer url="/page2" btnText="Go to Page2" icon ="right"/>
       </footer>
     </div>
   );

@@ -4,6 +4,7 @@
     background-color: var(--BLACK);
     padding: 20px;
     text-align: center;
+    align-items: center;
     width: 100vw;
     bottom: 0px;
     height: 8rem;
@@ -20,4 +21,6 @@
     font-size: var(--lg);
     align-items: flex-start;
     margin: auto;
+    height: 100%;
+    align-items: center;
 }

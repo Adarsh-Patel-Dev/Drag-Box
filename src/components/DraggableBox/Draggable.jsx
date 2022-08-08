@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./draggableBox.css";
 import Draggable from "react-draggable";
-import { usePositionContext } from "../Context/PositionContext";
+import { usePositionContext } from "../Context";
 import capitalize from "../../utility/capitalize";
 
 function DraggableBox() {
@@ -29,8 +29,7 @@ function DraggableBox() {
       >
         <Draggable
           handle=".handle"
-          bounds={{left: -960, top: -315, right: 0, bottom: -73}}
-          //bounds={{ left: -282, top: -161, right: 282, bottom: 161 }}
+          bounds={{left: -741, top: -373, right: 0, bottom: -160}}
           defaultPosition={coordinate}
           position={state.cordinates}
           onDrag={(e, data) => {

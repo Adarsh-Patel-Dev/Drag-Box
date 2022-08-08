@@ -1,0 +1,23 @@
+.main-container p{
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    text-align: left;
+    font-weight: 300;
+    line-height:2.3rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-container h2{
+    font-size: var(--lg);
+    padding: var(--lg);
+}
+
+.page2-header {
+    font-weight: 600;
+    padding: 1rem;
+    font-size: 2rem;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

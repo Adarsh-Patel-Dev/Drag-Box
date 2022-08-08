@@ -7,13 +7,15 @@ import Header from "./components/Header/Header";
 import HomePage from "./components/Pages/HomePage/HomePage";
 import { Routes, Route } from "react-router-dom";
 import { Page2 } from "./components/Pages/Page2/Page2";
+import ErrorPage from "./components/Pages/ErrorPage/ErrorPage";
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/page2" element={<Page2 />} />
+        <Route path="/page2" element= {<Page2 />} />
+        <Route path="*" element={<ErrorPage/>} />
       </Routes>
     </div>
   );
