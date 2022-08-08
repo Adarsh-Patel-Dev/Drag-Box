@@ -7,7 +7,7 @@ function Header() {
   const { state, positionDispatch } = usePositionContext();
   return (
     <div>
-      <header className="header-container flex-row center">
+      <header className="header-container flex-row ">
         <div className="flex-row center gap-md">
           <h2>Position:</h2>
           <div className="input-container flex-row">
