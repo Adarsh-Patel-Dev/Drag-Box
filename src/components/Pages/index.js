@@ -1,3 +1,3 @@
-export { ErrorPage } from './ErrorPage'
-export { HomePage } from './HomePage'
-export { Page2 } from './Page2'
+export { ErrorPage } from './ErrorPage/ErrorPage.jsx'
+export { HomePage } from './HomePage/HomePage.jsx'
+export { Page2 } from './Page2/Page2.jsx'

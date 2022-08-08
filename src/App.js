@@ -1,13 +1,6 @@
 import "./App.css";
-import { Clock } from "./components/Clock/Clock";
-import { Display } from "./components/Display/Display";
-import { DraggableBox } from "./components/DraggableBox/Draggable";
-import { Footer } from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import HomePage from "./components/Pages/HomePage/HomePage";
+import {HomePage, Page2, ErrorPage} from "./components/Pages";
 import { Routes, Route } from "react-router-dom";
-import { Page2 } from "./components/Pages/Page2/Page2";
-import ErrorPage from "./components/Pages/ErrorPage/ErrorPage";
 
 function App() {
   return (

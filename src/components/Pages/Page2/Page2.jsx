@@ -1,6 +1,6 @@
 import React from "react";
 import "./page2.css";
-import { Footer } from "../../Footer/Footer";
+import { Footer } from "../../../components";
 
 function Page2() {
   return (

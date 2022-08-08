@@ -1,9 +1,6 @@
 import React, { useCallback, useEffect } from "react";
 import { usePositionContext } from "../../Context/PositionContext";
-import { Display } from "../../Display/Display";
-import { DraggableBox } from "../../DraggableBox/Draggable";
-import { Footer } from "../../Footer/Footer";
-import Header from "../../Header/Header";
+import {Header, Footer, Display, DraggableBox} from "../../../components";
 import "../page.css"
 
 function HomePage() {
@@ -47,4 +44,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export  {HomePage};
